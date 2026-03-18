@@ -9,50 +9,62 @@
         h1 { color: #007AFF; border-bottom: 2px solid #eee; padding-bottom: 10px; }
         h2 { color: #555; margin-top: 30px; border-left: 4px solid #007AFF; padding-left: 10px; }
         .footer { margin-top: 50px; font-size: 0.9em; color: #777; border-top: 1px solid #eee; padding-top: 20px; }
-        .highlight { background: #f0f7ff; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
+        .highlight { background: #f0f7ff; padding: 15px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #d0e7ff; }
         ul { padding-left: 20px; }
         li { margin-bottom: 8px; }
+        .update-note { font-style: italic; color: #666; font-size: 0.9em; }
     </style>
 </head>
 <body>
 
     <h1>Privacy Policy for Opti AI</h1>
     <p><strong>Last Updated: March 2026</strong></p>
+    <p class="update-note">This policy has been updated to clarify data sharing practices with third-party AI services.</p>
 
     <div class="highlight">
-        <strong>Privacy Commitment:</strong> Opti AI is built with a "Local First" philosophy. Your physical profile data (age, height, weight) and food logs are stored on your device, not on our servers. 
+        <strong>Privacy Commitment:</strong> Opti AI is built with a "Local First" philosophy. Your physical profile data (age, height, weight) and food logs are primarily stored on your device. We only transmit specific data to third-party services when necessary to provide core app functionality, and only after obtaining your explicit permission.
     </div>
 
     <h2>1. On-Device Data Storage</h2>
-    <p>To provide personalized fitness suggestions, Opti AI stores the following information <strong>locally on your device</strong>:</p>
+    <p>To provide personalized fitness suggestions, Opti AI stores the following information <strong>locally on your device</strong> via Apple's secure storage frameworks:</p>
     <ul>
         <li>Physical attributes (Age, Height, Weight)</li>
         <li>Daily fitness goals and food logs</li>
     </ul>
-    <p>We do not have access to this data. It is never sold, shared, or uploaded to our servers.</p>
+    <p>We do not maintain a central database of this personal information. It is never sold or shared with advertisers.</p>
 
-    <h2>2. AI Processing</h2>
-    <p>Opti AI uses Artificial Intelligence (such as Google Gemini) to provide nutrition analysis and fitness advice:</p>
+    <h2>2. Third-Party AI Data Collection & Use</h2>
+    <p>To provide nutrition analysis and personalized fitness advice, Opti AI shares specific data with <strong>Google LLC (Gemini API)</strong>. Per Apple Guidelines 5.1.1(i), we disclose the following:</p>
+    
     <ul>
-        <li><strong>Food Analysis:</strong> Descriptions of food items you enter are sent to the AI to retrieve nutritional facts.</li>
-        <li><strong>Stateless Processing:</strong> Any physical attributes sent to the AI for the purpose of generating advice are processed in a "stateless" manner. Our AI partners do not retain this data to build a profile of you or for training purposes.</li>
+        <li><strong>Data Sent:</strong> To generate accurate insights, the app transmits:
+            <ul>
+                <li><strong>Food Information:</strong> Text descriptions, photos of food, and photos of nutrition labels.</li>
+                <li><strong>Physical Profile:</strong> Gender, age, height, weight, and Basal Metabolic Rate (BMR).</li>
+                <li><strong>Fitness Context:</strong> Current fitness goals, exercise routines, and macro targets.</li>
+                <li><strong>Health Data:</strong> Any additional health information you choose to provide for analysis.</li>
+            </ul>
+        </li>
+        <li><strong>Purpose:</strong> This data is sent to the AI to calculate nutritional facts (calories, macros) and generate hyper-personalized health and fitness suggestions.</li>
+        <li><strong>User Permission:</strong> Opti AI requires your explicit consent via an in-app disclosure before any data is transmitted to the AI service.</li>
+        <li><strong>Data Protection & Retention:</strong> Our agreement with Google Gemini ensures data is processed in a "stateless" manner. Google does not retain this data to build user profiles or train their models. We have confirmed that Google provides data protections that meet or exceed the standards outlined in this policy.</li>
     </ul>
 
     <h2>3. Anonymous Analytics & Stability</h2>
-    <p>We use <strong>Google Firebase</strong> to ensure the app is stable and to understand general usage trends:</p>
+    <p>We use <strong>Google Firebase</strong> to ensure app stability and monitor general performance:</p>
     <ul>
-        <li><strong>Crashlytics:</strong> If the app crashes, we receive an anonymous technical report to help us fix the bug.</li>
-        <li><strong>Analytics:</strong> We track anonymous interactions (e.g., "User logged a meal") to improve app features. This is never linked to your personal identity or specific health data.</li>
+        <li><strong>Crashlytics:</strong> If the app crashes, an anonymous technical report is generated to help us identify the cause.</li>
+        <li><strong>Analytics:</strong> We track aggregate, non-identifiable interactions (e.g., how many users utilize the "Log Meal" feature) to improve the app. This is never linked to your personal identity.</li>
     </ul>
 
     <h2>4. Children’s Privacy</h2>
     <p>Opti AI is not intended for children under the age of 13. We do not knowingly collect or solicit personal information from anyone under 13.</p>
 
-    <h2>5. Data Retention & Deletion</h2>
-    <p>Because your data is stored locally, you are in total control. Deleting the Opti AI app from your device will permanently remove all your data. We cannot recover this data for you as we never had access to it.</p>
+    <h2>5. Data Control & Deletion</h2>
+    <p>Because your primary data is stored locally, you maintain total control. Deleting the Opti AI app from your device will permanently remove all stored data. Because we do not store your profile on our own servers, we cannot recover this data once the app is deleted.</p>
 
     <h2>6. Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+    <p>If you have any questions about this Privacy Policy or how your data is handled, please contact us at:</p>
     <p><strong>Email:</strong> <a href="mailto:support.optiai@gmail.com">support.optiai@gmail.com</a></p>
 
     <div class="footer">
